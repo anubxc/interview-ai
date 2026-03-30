@@ -1,4 +1,5 @@
 @use "./styles/button.scss";
+/* @import "tailwindcss"; */
 
 *{
     margin: 0;
@@ -8,8 +9,19 @@
 
 body, html, #root {
     width: 100%;
+    min-height: 100vh;
     background-color: #222222;
     color: whitesmoke;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-shell {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-content {
+    flex: 1;
 }
 

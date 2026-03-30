@@ -56,26 +56,7 @@ export const useAuth = () => {
     }
 
 
-    useEffect(() => {
-        const getAndsetUser = async () => {
-            try {
-                const data = await getMe();
 
-                if (data && data.user) {
-                    setUser(data.user);
-                } else {
-                    console.log("No user data received");
-                }
-
-            } catch (error) {
-                console.error("Error fetching user:", error.message);
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        getAndsetUser();
-    }, []);
 
 
     return {
