@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-  origin: true,
+  origin: "https://interview-ai-iojs.onrender.com/register",
   credentials: true
 }));
 
